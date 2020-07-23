@@ -1,38 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .App {
-  text-align: center;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-img-overlay h5 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-title {
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+#navLogoTop {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px
 }
 
-.App-link {
-  color: #61dafb;
+#jumbotronText {
+    margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navLogoBottom {
+    width: 50px;
+    height: 50px;
 }
+
+/*#loginText {
+    margin-right: 50px;
+    margin-top: 20px;
+}*/
+
+#copyright {
+    color: white;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+/*#profile {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.progress {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}*/
+
+#main {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+/*#thisWeek {
+    margin-top: 30px;
+}
+
+#facebook {
+    margin-right: 30px;
+    margin-top: 200px;
+}
+
+#instagram {
+    margin-right: 30px;
+    margin-top: 200px;
+}
+
+#twitter {
+    margin-top: 200px;
+} */
+
+
+#loginButton {
+    color: green;
+    cursor: pointer;
+}
+
+/*#signUp {
+    margin: 10px;
+}
+
+#cancel {
+    margin: 10px;
+}
+
+#signIn {
+    margin: 10px; 
+}*/
+
+.jumbotron {
+    color: white;
+}
+
+

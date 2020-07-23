@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import About from './components/AboutComponent';
+import Header from './components/HeaderComponent';
+import Footer from './components/FooterComponent';
+import { INSTRUCTIONS } from './shared/instructions';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            instructions: INSTRUCTIONS,
+        };
+    }
 
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+      return (
+          <div className="App">
+              <Header />
+              <About instructions={this.state.instructions} />
+              <Footer />
+          </div>
+      );
+  }
 }
 
 export default App;
